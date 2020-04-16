@@ -1,0 +1,214 @@
+* { box-sizing: border-box; }
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsl(257, 40%, 49%);
+    color: #fff;
+    background-image: url(/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.logo {
+    width: 130px;
+    margin: 25px;
+}
+
+.principal {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.illustration {
+    max-width: 80%;
+    justify-content: center;
+    margin: auto;
+    padding: 35px 0 50px 0;
+}
+
+.secondary {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
+    font-weight: 400;
+}
+
+p {
+    text-align: center;
+    margin: auto;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 20px 37px;
+    line-height: 25px;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    background-color:#fff;
+    border: none;
+    margin: 10px auto 20px auto;
+    padding: 10px 0;
+    font-size: 12px;
+    border-radius: 50px;
+    color: hsl(257, 40%, 49%);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 50%;
+    box-shadow: 0 8px 16px 0 #474647;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: hsl(293, 83%, 47%);
+    color: white;
+    transition: 0.5s;
+}
+
+.social-icons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.fb-icon,
+.ig-icon,
+.tw-icon {
+    filter: invert(1);
+    margin: 5px;
+    height: 15px;
+    width: 15px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(226, 24%, 71%); }
+
+
+@media (min-width: 501px) {
+
+    body{
+        background-image: url(/images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 1440px;
+        margin: auto;
+    }
+
+    .logo {
+        width: 150px;
+        margin: 0 0 50px 0;
+    }
+
+    .principal {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        padding: 40px 0 0 50px;
+    }
+
+    .illustration {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+    }
+    
+    .secondary {
+        padding: 170px 35px 0 40px;
+        width: 50%;
+        height: 100%;
+    }
+
+    h2 {
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+        font-size: 30px;
+        font-weight: 400;
+        margin-left: 0;
+    }
+    
+    p {
+        text-align: left;
+        font-size: 15px;
+        padding: 20px 35px 10px 0;
+        line-height: 20px;
+    }
+    
+    button {
+        font-family: 'Poppins', sans-serif;
+        background-color:#fff;
+        border: none;
+        margin: 10px 0 20px 0;
+        padding: 10px 0;
+        font-size: 15px;
+        border-radius: 50px;
+        color: hsl(257, 40%, 49%);
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        width: 30%;
+        box-shadow: 0 8px 16px 0 #474647;
+        transition: 0.5s;
+    }
+    
+    button:hover {
+        background-color: hsl(293, 83%, 47%);
+        color: white;
+        transition: 0.5s;
+    }
+    
+    .social-icons {
+        margin: 110px 30px 10px 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .fb-icon,
+    .ig-icon,
+    .tw-icon {
+        filter: invert(1);
+        margin: 5px;
+        height: 35px;
+        width: 35px;
+        padding: 5px;
+        border: 1px solid #000;
+        border-radius: 50%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        bottom: 10px;
+        left: 50px;
+        padding: 0;
+    }
+
+    .attribution {
+        padding: 0;
+        margin: auto;
+    }
+}
