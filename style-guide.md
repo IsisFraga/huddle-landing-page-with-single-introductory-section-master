@@ -5,12 +5,9 @@
 The designs were created to the following widths:
 
 - Mobile: 375px
-<!-- width 100%
-testar em 375px e ver se está igual ao design
-media query até 500px -->
+
 - Desktop: 1440px
-<!-- width 100%
-max width 1440px -->
+
 
 ## Colors
 
